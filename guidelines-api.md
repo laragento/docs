@@ -9,18 +9,34 @@
 
 <a name="method-names"></a>
 ## Method names
+If you are creating an Api to your Laragento package please use the following method names 
+and method-naming-conventions. It makes it a lot easier for an developer to access your data
+if all api look the same.
+
 
 #### first()
 
 ```php
 <?php 
       /**
-       * Returns the first occurrence of an data-list
+       * Returns the first occurrence in an data-list
        * The indentifier is either the id as integer, an object or the the most common and unique 
        * string representaion in the current entity. (like url_key with the product-entity)  
+       * When the occurrence is inactive, hidden, not visible or something similar null will be returned  
        */
       public function first($identifier){};
 ```
+
+#### fall()
+
+```php
+<?php 
+      /**
+       * Return the same result as first() but has some respect for inactive entities
+       */
+      public function fall($identifier){};
+```
+
 
 #### get()
 
@@ -85,7 +101,8 @@
 ```php
 <?php 
       /**
-       * Returns children of the specified resource
+       * Returns children of the specified resource, you know like child-categories
+       * or simple products in a group-product. 
        */
       public function children($id){};
 ```
