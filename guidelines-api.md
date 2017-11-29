@@ -117,6 +117,7 @@ Some possible Examples:
 ```php
 <?php 
       /**
+       * Example: 
        * Laragento\Customer\Http\Controllers\CustomerApi
        * - Returns the customer group 
        */
@@ -126,6 +127,7 @@ Some possible Examples:
 ```php
 <?php 
       /**
+       * Example: 
        * Laragento\Catalog\Http\Controllers\ProductApi
        * - Returns attribute list for a given attribute set
        */
@@ -135,6 +137,7 @@ Some possible Examples:
 ```php
 <?php 
       /**
+       * Example:
        * Laragento\Catalog\Http\Controllers\ProductApi
        * - Returns attributes with values for a given product.
        */
@@ -150,12 +153,22 @@ Some possible Examples:
       public function getIdBySku($sku){};
 ```
 
+#### allByYyy($Yyy)
 ```php
 <?php 
       /**
        * Example:
        */
-      public function getAllByEee($eee){};
+      public function allByYyy($eee){};
+```
+
+#### getByYyy($Yyy)
+```php
+<?php 
+      /**
+       * Example:
+       */
+      public function getByYyy($eee){};
 ```
 
 

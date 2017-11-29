@@ -9,7 +9,7 @@
 <a name="controller-method-names"></a>
 ## Controller Method Names
 
-> **Look at the guidelines-general for more information. The method names should be the same**
+> **Look at the guidelines-api for more information/methodes. The method names should be the same**
 
 Source: https://scotch.io/tutorials/simple-laravel-crud-with-resource-controllers
 
