@@ -1,4 +1,4 @@
-# Guidelines General
+# Package Creation
 
 - [Introduction](#introduction)
 - [First Level](#first-level)
