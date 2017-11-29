@@ -176,7 +176,7 @@ Some possible Examples:
       /**
        * Example:
        */
-      public function allByYyy($eee){};
+      public function allByYyy($yyy){};
 ```
 
 #### getByYyy($Yyy)
@@ -185,7 +185,7 @@ Some possible Examples:
       /**
        * Example:
        */
-      public function getByYyy($eee){};
+      public function getByYyy($yyy){};
 ```
 
 
