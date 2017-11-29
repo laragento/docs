@@ -30,36 +30,12 @@ class HomeController extends Controller
 
 <a name="available-methods"></a>
 ## Available Methods
-<style>
-    #product-method-list > p {
-        column-count: 3; -moz-column-count: 3; -webkit-column-count: 3;
-        column-gap: 2em; -moz-column-gap: 2em; -webkit-column-gap: 2em;
-    }
-    #product-method-list a {
-        display: block;
-    }
-</style>
-
-<div id="product-method-list" markdown="1">
-    [get](#method-get)
-    [getIdByUrlKey](#method-getIdByUrlKey)
-    [newest](#method-newest)
-</div>
 
 <a name="method-listing"></a>
 ## Method Listing
 
-<style>
-    #product-method code {
-        font-size: 14px;
-    }
-    #product-method:not(.first-product-method) {
-        margin-top: 50px;
-    }
-</style>
-
 <a name="method-first"></a>
-#### `first()` {#product-method .first-product-method}
+#### `first()`
 
 The `first` method returns formatted information about one product. Information about the 
 products **categories**, **attributes** and **children** are automatically included.
@@ -73,7 +49,7 @@ The function accepts the productId or the productUrlKey.
 ```
 
 <a name="method-getIdByUrlKey"></a>
-#### `getIdByUrlKey()` {#product-method}
+#### `getIdByUrlKey()`
 
 The `getIdByUrlKey` returns the product id by passing an urlKey
 ```php
@@ -83,7 +59,7 @@ The `getIdByUrlKey` returns the product id by passing an urlKey
 ```
 
 <a name="method-newest"></a>
-#### `newest()` {#product-method}
+#### `newest()`
 
 
 

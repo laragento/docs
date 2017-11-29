@@ -11,7 +11,7 @@
 Here is how you should name your methods, variables, classes and tests.
 
 #### Methods/Variables/Parameters
-Methods and Parameters have to be in CamelCase
+Methods and Parameters have to be in camelCase
 
 ```php
 <?php 
@@ -23,7 +23,7 @@ Methods and Parameters have to be in CamelCase
 ```
 
 #### Classes 
-Should be CamelCase as well
+Should be camelCase as well
 
 ```php
 <?php 
