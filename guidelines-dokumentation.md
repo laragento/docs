@@ -25,7 +25,7 @@ interface CategoryApiInterface
 }      
 ```
       
-#### in an class      
+#### in a class      
 ```php
 <?php 
 class CategoryApi extends Controller implements CategoryApiInterface
@@ -61,4 +61,4 @@ class CategoryApi extends Controller implements CategoryApiInterface
 }     
 ```
 
-#### in an test
+#### in a test

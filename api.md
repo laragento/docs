@@ -1,4 +1,4 @@
-# Guidelines Api
+# Api
 
 - [Introduction](#introduction)
 - [Endpoints](#endpoints)
@@ -15,20 +15,25 @@ v1/product/{product_id}
 v1/product/{product_slug}
 v1/product/attribute-list/{attribute_set}
 v1/product/{product_id}/attribute-list
+v1/product/{product_id}/parent
+v1/product/{product_id}/children
 ```
 
 ```
+v1/category/get
+v1/category/all
 v1/category/base/{website_id}
 v1/category/{category_id}
 v1/category/{category_slug}
+v1/category/{category_id}/parent
 v1/category/{category_id}/children
 v1/category/{category_id}/products
-v1/category/{category_id}/parent
 ```
 
 #### Customer
-
 ```
+v1/customer/get
+v1/customer/all
 v1/customer/{customer_id}
 v1/customer/{customer_email}
 v1/customer/{customer_id}/addresses

@@ -22,8 +22,8 @@ Methods and Parameters have to be in camelCase
       }
 ```
 
-#### Classes 
-Should be camelCase as well
+#### Classes and interfaces 
+Should be UpperCamelCase
 
 ```php
 <?php 
@@ -31,7 +31,7 @@ Should be camelCase as well
 ```
 
 #### DB Attributes
-Are separated by underscores (like they are in the database).
+Are separated by underscores and are lowercase (like they are in the database).
 ```php
 <?php 
       $product = Product::first(1);
@@ -39,7 +39,7 @@ Are separated by underscores (like they are in the database).
 ```
 
 #### Tests 
-Should be separated by underscores. Best write an short sentence 
+Should be separated by underscores. Best write a short sentence 
 
 ```php
 <?php 

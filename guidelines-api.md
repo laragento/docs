@@ -10,7 +10,7 @@
 <a name="method-names"></a>
 ## Method names
 If you are creating an Api to your Laragento package please use the following method names 
-and method-naming-conventions. It makes it a lot easier for an developer to access your data
+and method-naming-conventions. It makes it a lot easier for a developer to access your data
 if all api look the same.
 
 
@@ -19,7 +19,7 @@ if all api look the same.
 ```php
 <?php 
       /**
-       * Returns the first occurrence in an data-list
+       * Returns the first occurrence in a data-list
        * The indentifier is either the id as integer, an object or the the most common and unique 
        * string representaion in the current entity. (like url_key with the product-entity)  
        * When the occurrence is inactive, hidden, not visible or something similar null will be returned  
@@ -27,14 +27,14 @@ if all api look the same.
       public function first($identifier){};
 ```
 
-#### fall()
+#### forceFirst()
 
 ```php
 <?php 
       /**
        * Return the same result as first() but has some respect for inactive entities
        */
-      public function fall($identifier){};
+      public function forceFirst($identifier){};
 ```
 
 
@@ -126,11 +126,13 @@ if all api look the same.
 ```
 
 #### Relations
-Returns a related property of an resource
+Returns a related property of a resource
 The method name should be as readable and short as possible
 
 Some possible Examples: 
 
+#### xxx($yyy)
+When you want to access relation information
 ```php
 <?php 
       /**
@@ -145,11 +147,14 @@ Some possible Examples:
 <?php 
       /**
        * Example: 
-       * Laragento\Catalog\Http\Controllers\ProductApi
-       * - Returns attribute list for a given attribute set
+       * Laragento\Customer\Http\Controllers\CustomerApi
+       * - Returns addresses for a customer
        */
-      public function attributesBySetId($attributeSetId){};
+      public function addresses($customerId){};
 ```
+
+#### xxxWithYyy($yyy)
+When you want to access additional relation information
 
 ```php
 <?php 
@@ -161,22 +166,26 @@ Some possible Examples:
       public function attributesWithValues($productId){};
 ```
 
-#### getXxxByYyy($Yyy)
+#### xxxByYyy($yyy)
+```php
+<?php 
+      /**
+       * Example: 
+       * Laragento\Catalog\Http\Controllers\ProductApi
+       * - Returns attribute list for a given attribute set
+       */
+      public function attributesBySetId($attributeSetId){};
+```
+
+#### getXxxByYyy($yyy)
+You can use get if the method is badly readable like *idBySku()*
+Keep in mind that short and clean method names are more readable.
 ```php
 <?php 
       /**
        * Example:
        */
       public function getIdBySku($sku){};
-```
-
-#### allByYyy($Yyy)
-```php
-<?php 
-      /**
-       * Example:
-       */
-      public function allByYyy($yyy){};
 ```
 
 #### getByYyy($Yyy)
@@ -188,11 +197,22 @@ Some possible Examples:
       public function getByYyy($yyy){};
 ```
 
+#### allByYyy($yyy)
+```php
+<?php 
+      /**
+       * Example:
+       */
+      public function allByYyy($yyy){};
+```
+
+
+
 
 <a name="responses"></a>
 ## Responses
 - Api responses from core modules are all ways in json format. 
-- When you request more details from an resource you will get the the resource back
+- When you request more details from a resource you will get the the resource back
 according the requested detail information.
 
 #### v1/category/33/children
