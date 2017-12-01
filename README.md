@@ -9,7 +9,7 @@
 
 <a name="docs"></a>
 ## Documentation
-- [Api](>|api.md)
+- [Api](api.md)
 
 <a name="package-progress"></a>
 ## Package Progress (API Alpha)
