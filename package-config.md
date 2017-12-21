@@ -10,8 +10,7 @@
 <a name="naming"></a>
 ## Naming
 
-
-<a name="service-provider">
+<a name="service-provider"></a>
 ## Service Provider
 
 ```php
