@@ -1,4 +1,4 @@
-# Controller Guidelines
+# Create a Controller
 
 - [Introduction](#introduction)
 - [Controller Method Names](#controller-method-names)

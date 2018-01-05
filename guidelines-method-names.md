@@ -1,19 +1,17 @@
-# Interfaces Guidelines
+# Method Names Guidelines
 
 - [Introduction](#introduction)
 - [Method Names](#method-names)
-- [Responses](#responses)
+- [Examples](#examples)
 
 <a name="introduction"></a>
 ## Introduction
-
-<a name="method-names"></a>
-## Method names
 If you are creating an Api to your Laragento package please use the following method names 
 and method-naming-conventions. It makes it a lot easier for a developer to access your data
 if all api look the same.
 
-
+<a name="method-names"></a>
+## Method names
 #### first()
 
 ```php
@@ -206,40 +204,5 @@ Keep in mind that short and clean method names are more readable.
       public function allByYyy($yyy){};
 ```
 
-
-
-
-<a name="responses"></a>
-## Responses
-- Api responses from core modules are all ways in json format. 
-- When you request more details from a resource you will get the the resource back
-according the requested detail information.
-
-#### v1/category/33/children
-```
-{
-  "data": {
-    "id": 33,
-    "category_id": 33,
-    "name": "Küche",
-    "parent_id": 2,
-    "url_path": "kueche",
-    "children": {
-      "data": Array[11][
-        {
-          "id": 7,
-          "category_id": 7,
-          "name": "Gewürze",
-          "url_path": "kueche/gewuerze"
-        },
-        {
-          "id": 8,
-          "category_id": 8,
-          "name": "Geschenke/Sets",
-          "url_path": "kueche/geschenke"
-        }
-      ]
-    }
-  }
-}
-```
+<a name="examples"></a>
+## Examples

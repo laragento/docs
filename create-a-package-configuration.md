@@ -17,7 +17,7 @@
 <?php
 use Illuminate\Support\ServiceProvider;
 
-class ClientImportExportServiceProvider extends ServiceProvider
+class PackageNameServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -32,7 +32,6 @@ class ClientImportExportServiceProvider extends ServiceProvider
     }
 }
 ```
-
 
 
 <a name="publish-configuration"></a>

@@ -1,4 +1,4 @@
-# Dokumentation Guidelines
+# Documentation Guidelines
 
 - [Introduction](#introduction)
 - [List](#list)

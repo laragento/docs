@@ -1,4 +1,4 @@
-# Console Comments
+# Console a Console Command
 
 - [Introduction](#introduction)
 - [Example](#example)

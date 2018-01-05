@@ -1,4 +1,4 @@
-# Api Endpoints
+# Api Endpoints Overview
 
 - [Introduction](#introduction)
 - [Endpoints](#endpoints)
