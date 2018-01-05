@@ -24,33 +24,38 @@
 
 #### **src**
 - Handlers
-	- <em style="color:olive;">Take care of tasks not related to the data layer, like file handling</em>
+	- Take care of tasks not related to the data layer, like file handling
 - Http
-	- <em style="color:olive;">Api, Controllers, Middleware and Requests</em>
-- Models
-	- <em style="color:olive;">Direct access to database tables</em>
-- Repositories
-	- <em style="color:olive;">Get information from internal data storage or store data to storage</em>
+	- Api, Controllers, Middleware and Requests
 - Managers
-	- <em style="color:olive;">Junction point between data-provider and data-storage/services @see call-stack diagrams below</em>
+	- Junction point between data-provider and data-storage/services @see call-stack diagrams below
+	- Are used by Internal Calls, Controllers, Api Calls, Cron Jobs, Console Commands
+	- Package Facades point to Managers
+	- Handle data validation and authorisation by using Requests	
+- Models
+	- Direct access to database tables
+- Repositories
+	- Get information from internal data storage or store data to storage
 - Traits
-    - <em style="color:olive;">Traits</em>
+    - Traits
 - Transformers
-	- <em style="color:olive;">Data-Mapping</em>
+	- Data-Mapping
+- Services
+	- Connect to needed webservices like payment provider, delivery, tracking, exchange rates	
 - Support
-	- <em style="color:olive;">Facades, Helpers and Stuff</em>  
+	- Facades, Helpers and Stuff  
 - views
-	- <em style="color:olive;">Presentation Layer</em>
+	- Presentation Layer
   
 #### **tests**
 - Browser
-	- <em style="color:olive;">Laravel Dusk tests in browser</em>
+	- Laravel Dusk tests in browser
 - Integration
-	- <em style="color:olive;">Tests to integrate with other systems</em>  
+	- Tests to integrate with other systems  
 - Feature
-	- <em style="color:olive;">Tests with existing framwork</em>
+	- Tests with existing framwork
 - Unit
-	- <em style="color:olive;">Tests without framework</em>
+	- Tests without framework
 
 #### **vendor**
 
