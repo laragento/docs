@@ -64,6 +64,7 @@
 
 <a name="call-stack"></a>
 ## Call Stack
+![Call Stack Layers](https://raw.githubusercontent.com/laragento/docs/develop/images/CallStackLayers_v0.1.jpg)
 ![Call Stack General](https://raw.githubusercontent.com/laragento/docs/develop/images/CallStackGeneral_v0.1.jpg)
 ![Call Stack Packages](https://raw.githubusercontent.com/laragento/docs/develop/images/CallStackPackages_v0.1.jpg)
-![Call Stack Packages](https://raw.githubusercontent.com/laragento/docs/develop/images/CallStackNotAllowed_v0.1.jpg)
+![Call Stack NotAllowed](https://raw.githubusercontent.com/laragento/docs/develop/images/CallStackNotAllowed_v0.1.jpg)
