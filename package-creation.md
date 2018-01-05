@@ -60,5 +60,5 @@
 
 <a name="call-stack"></a>
 ## Call Stack
-![Call Stack General](https://github.com/laragento/docs/images/CallStackGeneral_v0.1.jpg)
-![Call Stack Packages](https://github.com/laragento/docs/images/CallStackPackages_v0.1.jpg)
+![Call Stack General](https://raw.githubusercontent.com/laragento/docs/develop/images/CallStackGeneral_v0.1.jpg)
+![Call Stack Packages](https://raw.githubusercontent.com/laragento/docs/develop/images/CallStackPackages_v0.1.jpg)
