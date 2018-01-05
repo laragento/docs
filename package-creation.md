@@ -23,6 +23,8 @@
 - factories, migrations, seeder
 
 #### **src**
+- Handlers
+	- <em style="color:olive;">Take care of tasks not related to the data layer, like file handling</em>
 - Http
 	- <em style="color:olive;">Api, Controllers, Middleware and Requests</em>
 - Models
@@ -30,7 +32,9 @@
 - Repositories
 	- <em style="color:olive;">Get information from internal data storage or store data to storage</em>
 - Managers
-	- <em style="color:olive;">Package specific like import-classes</em>
+	- <em style="color:olive;">Junction point between data-provider and data-storage/services @see call-stack diagrams below</em>
+- Traits
+    - <em style="color:olive;">Traits</em>
 - Transformers
 	- <em style="color:olive;">Data-Mapping</em>
 - Support
