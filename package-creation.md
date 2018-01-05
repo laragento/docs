@@ -5,6 +5,7 @@
 - [Second Level](#second-level)
 - [Used Packages](#used-packages)
 - [Search](#search)
+- [Call Stack](#call-stack)
 
 <a name="introduction"></a>
 ## Introduction
@@ -56,3 +57,8 @@
 <a name="search"></a>
 ## Search
 - https://laracasts.com/series/whatcha-working-on/episodes/16 ?
+
+<a name="call-stack"></a>
+## Call Stack
+![Call Stack General](https://github.com/laragento/docs/images/CallStackGeneral_v0.1.jpg)
+![Call Stack Packages](https://github.com/laragento/docs/images/CallStackPackages_v0.1.jpg)
