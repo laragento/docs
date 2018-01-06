@@ -2,13 +2,13 @@
 
 - [Introduction](#introduction)
 - [Method Names](#method-names)
-- [Examples](#examples)
+- [More Examples](#more-examples)
 
 <a name="introduction"></a>
 ## Introduction
-If you are creating an Api to your Laragento package please use the following method names 
+If you are creating an Manager, Api or Controller to your Laragento package, please use the following method names 
 and method-naming-conventions. It makes it a lot easier for a developer to access your data
-if all api look the same.
+if all method-names look the same.
 
 <a name="method-names"></a>
 ## Method names
@@ -129,7 +129,7 @@ The method name should be as readable and short as possible
 
 Some possible Examples: 
 
-#### xxx($yyy)
+#### xxx($yyyZZ)
 When you want to access relation information
 ```php
 <?php 
@@ -170,7 +170,7 @@ When you want to access additional relation information
       /**
        * Example: 
        * Laragento\Catalog\Http\Controllers\ProductApi
-       * - Returns attribute list for a given attribute set
+       * - Returns attribute list for a given attribute set id
        */
       public function attributesBySetId($attributeSetId){};
 ```
@@ -204,5 +204,5 @@ Keep in mind that short and clean method names are more readable.
       public function allByYyy($yyy){};
 ```
 
-<a name="examples"></a>
-## Examples
+<a name="more-examples"></a>
+## More Examples

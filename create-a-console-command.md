@@ -1,10 +1,34 @@
-# Console a Console Command
+# Create a Console Command
 
 - [Introduction](#introduction)
 - [Example](#example)
 
 <a name="introduction"></a>
 ## Introduction
+https://laravel.com/docs/5.5/artisan
+
+
+## Path in package
+packages/vendor/client-import-export/src/Commands/ClientImportProducts.php
+
+## Register
+```php
+<?php
+
+namespace Vendorname\ClientImportExport;
+
+use Illuminate\Console\Scheduling\Schedule;
+use Illuminate\Support\ServiceProvider; 
+
+class ClientImportExportServiceProvider extends ServiceProvider
+{
+
+    protected $commands = [
+        'Vendorname\ClientImportExport\Commands\ClientImportProducts',
+    ];
+    // [..]
+    
+```    
 
 <a name="example"></a>
 ## Example
@@ -13,7 +37,7 @@
 <?php
 use Illuminate\Console\Command;
 
-class ImportClientProducts extends Command
+class ClientImportProducts extends Command
 {
     protected $clientProductImport;
     /**
@@ -41,6 +65,7 @@ class ImportClientProducts extends Command
     {
         $this->info('Start Importing Product Data');
         // Do the magic
+        // [..]
         $this->info('End Product Data Import');
     }
 }

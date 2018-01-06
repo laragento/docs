@@ -1,14 +1,40 @@
 # Package Creation
 
 - [Introduction](#introduction)
+- [Register a package in Laragento](#register)
 - [First Level](#first-level)
 - [Second Level](#second-level)
-- [Used Packages](#used-packages)
+- [Used External Packages](#used-external-packages)
 - [Search](#search)
 - [Call Stack](#call-stack)
 
 <a name="introduction"></a>
 ## Introduction
+A package in Laragento represent a group of classes and functionalities witch are belonging together. (Like Customer and Addresses or Products and Categories)
+Ideally a package is like a service witch can be consumed by other parts of the program in a simple and well structured fashion.
+
+https://laravel.com/docs/5.5/packages
+
+<a name="register"></a>
+## Register a package in Laragento
+
+#### Add Service Provider
+´´´php config/app.php
+        /*
+         * Laragento Service Providers...
+         */
+        Laragento\Rating\RatingServiceProvider::class,
+
+        /*
+         * Client Service Providers...
+         */
+        Vendor\ClientImportExport\ClientImportExportServiceProvider::class,
+´´´
+
+#### Add Package to composer.json psr-4
+´´´
+"Laragento\\Rating\\": "packages/laragento/rating/src",
+´´´
 
 <a name="first-level"></a>
 ## First Level
@@ -28,7 +54,7 @@
 - Http
 	- Api, Controllers, Middleware and Requests
 - Managers
-	- Junction point between data-provider and data-storage/services @see call-stack diagrams below
+	- Junction point between data-provider and data-storage/services. See [Call Stack](#call-stack) diagrams below
 	- Are used by Internal Calls, Controllers, Api Calls, Cron Jobs, Console Commands
 	- Package Facades point to Managers
 	- Handle data validation and authorisation by using Requests	
@@ -48,6 +74,8 @@
 	- Presentation Layer
   
 #### **tests**
+@todo improve concept!
+
 - Browser
 	- Laravel Dusk tests in browser
 - Integration
@@ -59,8 +87,8 @@
 
 #### **vendor**
 
-<a name="used-packages"></a>
-## Used Packages
+<a name="used-external-packages"></a>
+## Used External Packages
 - https://fractal.thephpleague.com/transformers/
 
 <a name="search"></a>

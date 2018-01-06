@@ -5,10 +5,24 @@
 
 <a name="responses"></a>
 ## Responses
-- Api responses from core modules are all ways in json format. 
-- When you request more details from a resource you will get the the resource back
-according the requested detail information.
+- Api responses from core modules are provided in json format. 
 
+#### v1/category/33
+``` json
+{
+  "data": {
+    "id": 33,
+    "category_id": 33,
+    "name": "Küche",
+    "parent_id": 2,
+    "url_path": "kueche",
+    [..]
+  }
+}
+```
+
+- When you request more details from a resource you will get the the base resource back
+as well.
 #### v1/category/33/children
 ``` json
 {
@@ -18,6 +32,7 @@ according the requested detail information.
     "name": "Küche",
     "parent_id": 2,
     "url_path": "kueche",
+    [..],
     "children": {
       "data": Array[11][
         {

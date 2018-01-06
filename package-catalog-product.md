@@ -7,7 +7,7 @@
 <a name="introduction"></a>
 ## Introduction
 The `Laragento\Catalog\Support\Facades\ProductFacade` provides a easy access point to common tasks related 
-to catalog products. Below you see how you can use the Facade in your custom controller. The 4 newest 
+to catalog-products. Below you see how you can use the facade in your custom controller. The 4 newest 
 products will be returned to your template.
 
 ```php

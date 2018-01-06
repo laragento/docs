@@ -16,7 +16,7 @@ Here is how you should comment your code.
 interface CategoryApiInterface
 {
       /**
-       * Finds a category by an identifier, products and children will be included in the response
+       * Finds a category by an identifier, children will be included in the response
        *
        * @param $identifier
        * @return string json
@@ -60,5 +60,3 @@ class CategoryApi extends Controller implements CategoryApiInterface
       }
 }     
 ```
-
-#### in a test

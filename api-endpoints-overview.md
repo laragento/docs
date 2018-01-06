@@ -10,6 +10,8 @@
 ## Endpoints
 
 #### Catalog
+
+**/product/**
 ```
 v1/product/{product_id}
 v1/product/{product_slug}
@@ -21,6 +23,7 @@ v1/product/{product_id}/price
 v1/product/{product_id}/special-price
 ```
 
+**/category/**
 ```
 v1/category/get
 v1/category/all
@@ -33,6 +36,7 @@ v1/category/{category_id}/products
 ```
 
 #### Customer
+**/customer/**
 ```
 v1/customer/get
 v1/customer/all
@@ -45,6 +49,7 @@ v1/customer/{customer_id}/billing
 v1/customer/{customer_id}/addresses/{address_id}
 ```
 
+**/address/**
 ```
 v1/address/{address_id}
 ```

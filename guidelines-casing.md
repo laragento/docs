@@ -46,7 +46,7 @@ Should be separated by underscores. Best write a short sentence
             /**
             * @test
             */
-            public function get_default_billing_address_of_an_customer()
+            public function get_default_billing_address_by_customer_id()
             {
                   
             }
