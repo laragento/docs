@@ -16,7 +16,6 @@
     "name": "Küche",
     "parent_id": 2,
     "url_path": "kueche",
-    [..]
   }
 }
 ```
@@ -32,9 +31,8 @@ as well.
     "name": "Küche",
     "parent_id": 2,
     "url_path": "kueche",
-    [..],
     "children": {
-      "data": Array[11][
+      "data": [
         {
           "id": 7,
           "category_id": 7,

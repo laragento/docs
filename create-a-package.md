@@ -19,22 +19,23 @@ https://laravel.com/docs/5.5/packages
 ## Register a package in Laragento
 
 #### Add Service Provider
-´´´php config/app.php
-        /*
-         * Laragento Service Providers...
-         */
-        Laragento\Rating\RatingServiceProvider::class,
+config/app.php
+```
+/*
+ * Laragento Service Providers...
+ */
+Laragento\Rating\RatingServiceProvider::class,
 
-        /*
-         * Client Service Providers...
-         */
-        Vendor\ClientImportExport\ClientImportExportServiceProvider::class,
-´´´
+/*
+ * Client Service Providers...
+ */
+Vendor\ClientImportExport\ClientImportExportServiceProvider::class,
+```
 
 #### Add Package to composer.json psr-4
-´´´
+```
 "Laragento\\Rating\\": "packages/laragento/rating/src",
-´´´
+```
 
 <a name="first-level"></a>
 ## First Level
