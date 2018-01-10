@@ -42,7 +42,6 @@ Vendor\ClientImportExport\ClientImportExportServiceProvider::class,
 - **database**
 - **src**
 - **tests**
-- **vendor**
 
 <a name="second-level"></a>
 ## Second Level
@@ -85,8 +84,6 @@ Vendor\ClientImportExport\ClientImportExportServiceProvider::class,
 	- Tests with existing framwork
 - Unit
 	- Tests without framework
-
-#### **vendor**
 
 <a name="used-external-packages"></a>
 ## Used External Packages
