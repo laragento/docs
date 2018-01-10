@@ -27,12 +27,15 @@ Should you join the revolution?
 
 <a name="docs"></a>
 ## Documentation
+**Laragento-Project**
+- [Project Phases](project-phases.md)
+
 **Api**
 - [Api Endpoints Overview](api-endpoints-overview.md)
 - [Api Responses](api-responses.md)
 
 **Package Creation**
-- [Create A Package](create-package.md)
+- [Create A Package](create-a-package.md)
     - [Create A Console Command](create-a-console-command.md)
     - [Create A Controller](create-a-controller.md)
     - [Create A Package Configuration](create-a-package-configuration.md)
