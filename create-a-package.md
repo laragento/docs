@@ -102,7 +102,7 @@ Vendor\ClientImportExport\ClientImportExportServiceProvider::class,
 ![Call Stack Layers](https://raw.githubusercontent.com/laragento/docs/develop/images/CallStackLayers_v0.1.jpg)
 
 #### **Call Stack General**
-![Call Stack General](https://raw.githubusercontent.com/laragento/docs/develop/images/CallStackGeneral_v0.1.jpg)
+![Call Stack General](https://raw.githubusercontent.com/laragento/docs/develop/images/CallStackGeneral_v0.2.jpg)
 - Managers work as junction point between the **date provider layer** and the **data storage layer**
 
 #### **Call Stack Packages**
