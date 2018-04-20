@@ -1,4 +1,4 @@
-# Package Config
+# Module Config
 
 - [Introduction](#introduction)
 - [Naming](#naming)

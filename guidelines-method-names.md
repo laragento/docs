@@ -6,7 +6,7 @@
 
 <a name="introduction"></a>
 ## Introduction
-If you are creating an Manager, Api or Controller to your Laragento package, please use the following method names 
+If you are creating an Manager, Api or Controller to your Laragento module, please use the following method names 
 and method-naming-conventions. It makes it a lot easier for a developer to access your data
 if all method-names look the same.
 

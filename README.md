@@ -2,7 +2,7 @@
 
 - [Introduction](#introduction)
 - [Documentation](#docs)
-- [Package Progress (Api Alpha)](#package-progress)
+- [Module Progress (Api Alpha)](#module-progress)
 
 <a name="introduction"></a>
 ## Introduction
@@ -23,7 +23,7 @@ What is Laragento not?
 
 What are the dependencies?
 - Laragento is using this package https://github.com/nWidart/laravel-modules to organize
-its structure. It's highly recommended to use the packages for your own functionalities.
+its structure. It's highly recommended to use the package for your own functionalities.
 For more information you can visit https://nwidart.com/laravel-modules/v3/introduction
   
 Should you join the revolution?
@@ -38,25 +38,25 @@ Should you join the revolution?
 - [Api Endpoints Overview](api-endpoints-overview.md)
 - [Api Responses](api-responses.md)
 
-**Package Creation**
-- [Create A Package](create-a-package.md)
+**Module Creation**
+- [Create A Module](create-a-module.md)
     - [Create A Console Command](create-a-console-command.md)
     - [Create A Controller](create-a-controller.md)
-    - [Create A Package Configuration](create-a-package-configuration.md)
+    - [Create A Module Configuration](create-a-module-configuration.md)
     
 **Guidelines**
 - [Casing](guidelines-casing.md)
 - [Documentation](guidelines-documentation.md)
 - [Method Names](guidelines-method-names.md)
 
-**Laragento Core Packages**
+**Laragento Core Modules**
 - Catalog
-    - [Product](package-catalog-product.md)
+    - [Product](module-catalog-product.md)
     
     
 
-<a name="package-progress"></a>
-## Package Progress (API Alpha)
+<a name="module-progress"></a>
+## Module Progress (API Alpha)
 
 These progress-bars show how much of the work is done.
 100% would be a working **Alpha Stage** of the **API**
