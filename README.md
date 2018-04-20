@@ -6,24 +6,28 @@
 
 <a name="introduction"></a>
 ## Introduction
-Laragento is a wrapper for the Magento 2 database based on Laravel. The primary aim is to make frontend development 
-easier and more developer friendly.
+Laragento is a wrapper for the Magento 2 database based on Laravel. 
+The primary aim is to make the life of a shop developer easier. 
 
 What is Laragento?
-- Well it's not finished yet. Actually it's in early Alpha stage.
-- Its made with Laravel, vue.js and Bulma. (Yeah!)
+- Its made with Laravel, vue.js. (Yeah!)
 - There are a lot of automated tests and the documentation is growing (right now).
 - Laragento is supported by several agencies.
 - It's open source, as it should be.
-- The is no enterprise version and there will never be one
+- The is no enterprise version and there will never be one.
 
 What is Laragento not?
-- It's not a replacement for Magento 2 (You still need it for Admin and Checkout purposes)
-- It's not able to handle large international shops (not in 2018)
+- It's not a replacement for Magento 2 (You still need it for Backend and Checkout purposes).
+- It's not able to handle large international shops (not in 2018).
+- It's NOT finished. It's in early Alpha.
 
+What are the dependencies?
+- Laragento is using this package https://github.com/nWidart/laravel-modules to organize
+its structure. It's highly recommended to use the packages for your own functionalities.
+For more information you can visit https://nwidart.com/laravel-modules/v3/introduction
+  
 Should you join the revolution?
-- Definitely. Bigger is better.
-
+- Definitely. Just test it an give us some feedback. Any help is highly appreciated.
 
 <a name="docs"></a>
 ## Documentation

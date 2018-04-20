@@ -5,13 +5,13 @@
 
 <a name="introduction"></a>
 ## Introduction
-https://laravel.com/docs/5.5/artisan
+If you want to know more about Laravel-Commands have a look at: https://laravel.com/docs/5.6/artisan 
+To create a command for your module you can use:
+```
+php artisan module:make-command CreatePostCommand Blog
+```
 
-
-## Path in package
-packages/vendor/client-import-export/src/Commands/ClientImportProducts.php
-
-## Register
+## Register a command
 ```php
 <?php
 
@@ -20,53 +20,11 @@ namespace Vendorname\ClientImportExport;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Support\ServiceProvider; 
 
-class ClientImportExportServiceProvider extends ServiceProvider
+class ProjectNameImportExportServiceProvider extends ServiceProvider
 {
-
     protected $commands = [
-        'Vendorname\ClientImportExport\Commands\ClientImportProducts',
+        'VendorName\ProjectNameImportExport\Commands\ClientImportProducts',
     ];
     // [..]
-    
+ }       
 ```    
-
-<a name="example"></a>
-## Example
-
-```php
-<?php
-use Illuminate\Console\Command;
-
-class ClientImportProducts extends Command
-{
-    protected $clientProductImport;
-    /**
-     * The name and signature of the console command.
-     *
-     * @var string
-     */
-    protected $signature = 'client:import-products 
-                            {--F|files : Whether the source files should be imported (default: false)} 
-                            {--A|archive : Whether to archive the imported SourceFiles after Import (default: false)}'; 
-
-    /**
-     * The console command description.
-     *
-     * @var string
-     */
-    protected $description = 'Import products from that file in that place';
-
-    /**
-     * Execute the console command.
-     *
-     * @return mixed
-     */
-    public function handle()
-    {
-        $this->info('Start Importing Product Data');
-        // Do the magic
-        // [..]
-        $this->info('End Product Data Import');
-    }
-}
-```

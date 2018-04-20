@@ -36,7 +36,7 @@ class PackageNameServiceProvider extends ServiceProvider
 
 <a name="publish-configuration"></a>
 ## Publish Configuration
-- https://laravel.com/docs/5.5/packages
+- https://laravel.com/docs/5.6/packages
 ```
 php artisan vendor:publish --force
 ```

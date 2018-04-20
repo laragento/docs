@@ -21,7 +21,7 @@
 ```
 
 - When you request more details from a resource you will get the the base resource back
-as well.
+as well. (The child-categories in this case)
 #### v1/category/33/children
 ``` json
 {
@@ -42,7 +42,7 @@ as well.
         {
           "id": 8,
           "category_id": 8,
-          "name": "Geschenke/Sets",
+          "name": "Geschenke",
           "url_path": "kueche/geschenke"
         }
       ]
