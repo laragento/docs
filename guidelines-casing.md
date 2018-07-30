@@ -9,7 +9,7 @@
 Here is defined how you should name your methods, variables, classes and tests.
 
 #### Methods/Variables/Parameters
-Methods and Parameters have to be in camelCase
+Methods and Parameters have to be in camelCase (in blade templates as well)
 
 ```php
 <?php 
@@ -35,6 +35,28 @@ Are separated by underscores and are lowercase (like they are in the database).
       $product = Product::first(1);
       $productId = $product->entity_id;
 ```
+
+
+#### Array Keys
+Are separated by underscores and are lowercase
+```php
+<?php 
+      $customer = 
+      [
+            'address_firstname' => 'Arthur',    
+            'address_lastname' => 'Dent',    
+      ];
+```
+
+**Exception!**
+```php
+<?php 
+        return view('catalog.product', [
+            'productQty' => $productQtyg,
+            'storeId' => $storeId,
+        ]);
+```
+
 
 #### Tests 
 Should be separated by underscores. Best write a short sentence 
