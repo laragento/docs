@@ -1,14 +1,13 @@
 # Casing Guidelines
 
 - [Introduction](#introduction)
-- [Cases](#cases)
 
 <a name="introduction"></a>
 ## Introduction
 
 Here is defined how you should name your methods, variables, classes and tests.
 
-#### Methods/Variables/Parameters
+### Methods/Variables/Parameters
 Methods and Parameters have to be in camelCase (in blade templates as well)
 
 ```php
@@ -20,7 +19,7 @@ Methods and Parameters have to be in camelCase (in blade templates as well)
       }
 ```
 
-#### Classes and Interfaces 
+### Classes and Interfaces 
 Should be UpperCamelCase
 
 ```php
@@ -28,7 +27,7 @@ Should be UpperCamelCase
       class ProductApi extends ProductApiInterface{}
 ```
 
-#### DB Attributes
+### DB Attributes
 Are separated by underscores and are lowercase (like they are in the database).
 ```php
 <?php 
@@ -36,8 +35,7 @@ Are separated by underscores and are lowercase (like they are in the database).
       $productId = $product->entity_id;
 ```
 
-
-#### Array Keys
+### Array Keys
 Are separated by underscores and are lowercase
 ```php
 <?php 
@@ -48,18 +46,20 @@ Are separated by underscores and are lowercase
       ];
 ```
 
-**Exception!**
+> Exception!
 ```php
 <?php 
         return view('catalog.product', [
-            'productQty' => $productQtyg,
+            'productQty' => $productQty,
             'storeId' => $storeId,
         ]);
 ```
 
 
-#### Tests 
-Should be separated by underscores. Best write a short sentence 
+### Tests 
+Should be separated by underscores. Best write a short sentence. 
+Don't add test to the method name. 
+Add @test to the comment
 
 ```php
 <?php 
@@ -70,7 +70,7 @@ Should be separated by underscores. Best write a short sentence
             */
             public function get_default_billing_address_by_customer_id()
             {
-                  
+                  // [..]
             }
       }
 ```

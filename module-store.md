@@ -17,7 +17,6 @@ for more information.
 Store views are typically used to make the store available in different locales. Shoppers can use the 
 language chooser in the header of the store to change the store view.
 
-
 ## Whats the difference between ADMIN_STORE_ID and DEFAULT_STORE_ID?
 Keep in mind that information shall be saved in the AdminStore and not in the default language. The default
 languages information mustn't be touched.
